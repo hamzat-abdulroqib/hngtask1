@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.sec1 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: hsl(211, 100%, 50%);
+    color: white;
+    padding: 20px;
+}
+
+.sec1 h1 {
+    font-size: 2.5rem;
+}
+
+.sec1 h3 {
+    font-size: 1.25rem;
+}
+
+.about-me {
+    margin-top: 20px;
+    font-size: 1.25rem;
+}
+
+.me {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.me .profile {
+    padding: 20px;
+    width: 100%; 
+}
+
+.me .profile a {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white; 
+    word-break: break-all; 
+}
+
+
+.sec2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.container1 {
+    max-width: 600px;
+    width: 100%; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container1 .t {
+    margin-bottom: 20px;
+    color: #314997;
+}
+
+.container1 .time, .container1 .day {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.goal {
+    background-color: #314997;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.sec3 {
+    background-color: hsl(211, 100%, 50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.container2 {
+    max-width: 600px;
+    width: 100%; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container2 .link {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.container2 .link p {
+    margin-bottom: 10px;
+    color: black; 
+
+.container2 .link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .sec1 {
+        padding: 10px;
+    }
+    
+    .me {
+        flex-direction: column; 
+        width: 100%;
+    }
+    
+    .me .profile {
+        text-align: center;
+    }
+
+    .me .profile a {
+        margin-top: 10px;
+    }
+
+    .container1, .container2 {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sec1 h1 {
+        font-size: 2rem;
+    }
+
+    .sec1 h3, .about-me {
+        font-size: 1rem;
+    }
+
+    .container1 .time, .container1 .day {
+        font-size: 1.25rem;
+    }
+}
